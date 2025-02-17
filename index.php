@@ -1,7 +1,14 @@
+<?php
+    session_start();
+    if (isset($_SESSION['displayed']) && $_SESSION['displayed'] === true) {
+    session_unset(); // Clear all session variables
+    session_destroy(); // Destroy the session
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convert Image to Pixelated Image</title>
@@ -47,9 +54,6 @@
         </form>
 
         <?php
-        // starts a new session or resumes an existing session. It is necessary to use session variables.
-        session_start();
-
         if (isset($_SESSION['uploaded_file']) && isset($_SESSION['pixelated_file'])){
             echo '<img src="'.$_SESSION['uploaded_file'].'" width="300">';
             echo '&nbsp;';
@@ -61,9 +65,6 @@
             $_SESSION['displayed'] = true;
         }
         ?>
-
-    
-    
     </main>
 </body>
 </html>
