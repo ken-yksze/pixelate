@@ -51,11 +51,6 @@ if(isset($_POST["submit"])) {
         $uploadOk = 0;
     }
 
-    // // Prevent duplicate file names by appending a timestamp
-    // if (file_exists($target_file)) {
-    //     $target_file = $target_dir . time() . "_" . basename($_FILES["fileToUpload"]["name"]);
-    // }
-
     // Move the uploaded file if there are no errors
     if ($uploadOk == 1) {
         // Moves the uploaded file from a temporary location to the uploads/ directory.
