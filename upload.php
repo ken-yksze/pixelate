@@ -70,12 +70,13 @@ if (isset($_POST["submit"])) {
             // make it accessible in other scripts
             require_once 'pixelate.php';
             $pixelated_file = 'uploads/converted.png';
-            $instruction_file = 'uploads/instruction.png';
+            $instruction_file = 'uploads/instruction.pdf';
             image_pixelate($target_file, $pixelated_file, $_POST['new_width'], $_POST['num_color']);
             generate_pixelate_instruction($pixelated_file, $instruction_file, $_POST['new_width']);
             $_SESSION['uploaded_file'] = $target_file;
             $_SESSION['pixelated_file'] = $pixelated_file;
             $_SESSION['instruction_file'] = $instruction_file;
+            $_SESSION['instruction_png'] = 'uploads/instruction.png';
         } else {
             echo "Sorry, there was an error uploading your file.";
         }
