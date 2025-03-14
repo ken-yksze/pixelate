@@ -162,8 +162,8 @@ function generate_pixelate_instruction($source, $destination, $new_width)
 
     // Preserve transparency (for PNGs)
     imagesavealpha($destination_image, true);
-    $transparent = imagecolorallocatealpha($destination_image, 0, 0, 0, 127);
-    imagefill($destination_image, 0, 0, $transparent);
+    $black = imagecolorallocatealpha($destination_image, 0, 0, 0, 0);
+    imagefill($destination_image, 0, 0, $black);
 
     $colours_to_info = get_object_vars(json_decode(file_get_contents("colours_to_info.json")));
 

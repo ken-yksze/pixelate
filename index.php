@@ -67,6 +67,7 @@ if (isset($_SESSION['displayed']) && $_SESSION['displayed'] === true) {
             echo '<img src="' . $_SESSION['pixelated_file'] . '" width="300">';
             echo '<br>';
             echo '<button onclick="window.location.href=\'download.php?file=' . $_SESSION['pixelated_file'] . '\'" id="download-btn">Download</button>';
+            echo '<br>';
             echo '<h2>LEGO instruction</h2>';
             echo '<img src="' . $_SESSION['instruction_file'] . '" width="600" id="instruction">';
             echo '<button onclick="window.location.href=\'download.php?file=' . $_SESSION['instruction_file'] . '\'" id="download-btn">Download</button>';
