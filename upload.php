@@ -15,6 +15,16 @@ if (isset($_SESSION['displayed']) && $_SESSION['displayed'] === true) {
     unset($_SESSION['displayed']);
 }
 
+if ($_POST['new_width'] < 1 || $_POST['new_width'] > 128) {
+    echo 'New width should be >= 1 and <= 128';
+    exit;
+}
+
+if ($_POST['num_color'] < 1) {
+    echo 'Number of color should be >= 1';
+    exit;
+}
+
 // Files will be uploaded to the uploads/ folder.
 $target_dir = "uploads/";
 
@@ -24,14 +34,14 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 
 // Converts the file extension(jpg/jpeg/png/gif) to lowercase for consistency.
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+$imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
 // Check if image file is a actual image or fake image
-if(isset($_POST["submit"])) {
+if (isset($_POST["submit"])) {
     // check if the file is an actual image.
-    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]); 
+    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
 
-    if($check !== false) {
+    if ($check !== false) {
         $uploadOk = 1; //uploads continue
     } else {
         echo "File is not an image.";
