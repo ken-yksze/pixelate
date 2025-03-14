@@ -1,0 +1,906 @@
+{
+  "0033b2": {
+    "id": "1",
+    "name": "[Unknown]"
+  },
+  "05131d": {
+    "id": "267",
+    "name": "[No Color/Any Color]"
+  },
+  "0055bf": {
+    "id": "3",
+    "name": "Blue"
+  },
+  "237841": {
+    "id": "4",
+    "name": "Green"
+  },
+  "008f9b": {
+    "id": "5",
+    "name": "Dark Turquoise"
+  },
+  "c91a09": {
+    "id": "36",
+    "name": "Trans-Red"
+  },
+  "c870a0": {
+    "id": "7",
+    "name": "Dark Pink"
+  },
+  "583927": {
+    "id": "183",
+    "name": "Opal Trans-Brown"
+  },
+  "9ba19d": {
+    "id": "9",
+    "name": "Light Gray"
+  },
+  "6d6e5c": {
+    "id": "237",
+    "name": "HO Dark Gray"
+  },
+  "b4d2e3": {
+    "id": "11",
+    "name": "Light Blue"
+  },
+  "4b9f4a": {
+    "id": "12",
+    "name": "Bright Green"
+  },
+  "55a5af": {
+    "id": "13",
+    "name": "Light Turquoise"
+  },
+  "f2705e": {
+    "id": "14",
+    "name": "Salmon"
+  },
+  "fc97ac": {
+    "id": "15",
+    "name": "Pink"
+  },
+  "f2cd37": {
+    "id": "16",
+    "name": "Yellow"
+  },
+  "ffffff": {
+    "id": "166",
+    "name": "Modulex Clear"
+  },
+  "c2dab8": {
+    "id": "18",
+    "name": "Light Green"
+  },
+  "fbe696": {
+    "id": "19",
+    "name": "Light Yellow"
+  },
+  "e4cd9e": {
+    "id": "260",
+    "name": "HO Tan"
+  },
+  "c9cae2": {
+    "id": "21",
+    "name": "Light Violet"
+  },
+  "d4d5c9": {
+    "id": "22",
+    "name": "Glow In Dark Opaque"
+  },
+  "81007b": {
+    "id": "23",
+    "name": "Purple"
+  },
+  "2032b0": {
+    "id": "24",
+    "name": "Dark Blue-Violet"
+  },
+  "fe8a18": {
+    "id": "25",
+    "name": "Orange"
+  },
+  "923978": {
+    "id": "26",
+    "name": "Magenta"
+  },
+  "bbe90b": {
+    "id": "27",
+    "name": "Lime"
+  },
+  "958a73": {
+    "id": "28",
+    "name": "Dark Tan"
+  },
+  "e4adc8": {
+    "id": "226",
+    "name": "Glitter Trans-Pink"
+  },
+  "ac78ba": {
+    "id": "30",
+    "name": "Medium Lavender"
+  },
+  "e1d5ed": {
+    "id": "31",
+    "name": "Lavender"
+  },
+  "635f52": {
+    "id": "222",
+    "name": "Trans-Black"
+  },
+  "0020a0": {
+    "id": "188",
+    "name": "Opal Trans-Dark Blue"
+  },
+  "84b68d": {
+    "id": "225",
+    "name": "Glitter Trans-Green"
+  },
+  "d9e4a7": {
+    "id": "223",
+    "name": "Glitter Trans-Bright Green"
+  },
+  "aeefec": {
+    "id": "38",
+    "name": "Trans-Light Blue"
+  },
+  "f8f184": {
+    "id": "39",
+    "name": "Trans-Neon Green"
+  },
+  "c1dff0": {
+    "id": "40",
+    "name": "Trans-Very Lt Blue"
+  },
+  "df6695": {
+    "id": "75",
+    "name": "Glitter Trans-Dark Pink"
+  },
+  "f5cd2f": {
+    "id": "266",
+    "name": "Opal Trans-Yellow"
+  },
+  "fcfcfc": {
+    "id": "182",
+    "name": "Opal Trans-Clear"
+  },
+  "a5a5cb": {
+    "id": "81",
+    "name": "Glitter Trans-Purple"
+  },
+  "dab000": {
+    "id": "45",
+    "name": "Trans-Neon Yellow"
+  },
+  "ff800d": {
+    "id": "46",
+    "name": "Trans-Neon Orange"
+  },
+  "645a4c": {
+    "id": "47",
+    "name": "Chrome Antique Brass"
+  },
+  "6c96bf": {
+    "id": "48",
+    "name": "Chrome Blue"
+  },
+  "3cb371": {
+    "id": "49",
+    "name": "Chrome Green"
+  },
+  "aa4d8e": {
+    "id": "50",
+    "name": "Chrome Pink"
+  },
+  "1b2a34": {
+    "id": "51",
+    "name": "Chrome Black"
+  },
+  "f3cf9b": {
+    "id": "52",
+    "name": "Very Light Orange"
+  },
+  "cd6298": {
+    "id": "53",
+    "name": "Light Purple"
+  },
+  "582a12": {
+    "id": "54",
+    "name": "Reddish Brown"
+  },
+  "a0a5a9": {
+    "id": "55",
+    "name": "Light Bluish Gray"
+  },
+  "6c6e68": {
+    "id": "60",
+    "name": "Speckle DBGray-Silver"
+  },
+  "5a93db": {
+    "id": "57",
+    "name": "Medium Blue"
+  },
+  "73dca1": {
+    "id": "58",
+    "name": "Medium Green"
+  },
+  "fecccf": {
+    "id": "61",
+    "name": "Light Pink"
+  },
+  "f6d7b3": {
+    "id": "62",
+    "name": "Light Nougat"
+  },
+  "a5a9b4": {
+    "id": "64",
+    "name": "Metallic Silver"
+  },
+  "899b5f": {
+    "id": "65",
+    "name": "Metallic Green"
+  },
+  "dbac34": {
+    "id": "66",
+    "name": "Metallic Gold"
+  },
+  "aa7d55": {
+    "id": "67",
+    "name": "Medium Nougat"
+  },
+  "3f3691": {
+    "id": "68",
+    "name": "Dark Purple"
+  },
+  "7c503a": {
+    "id": "69",
+    "name": "Light Brown"
+  },
+  "4c61db": {
+    "id": "70",
+    "name": "Royal Blue"
+  },
+  "d09168": {
+    "id": "71",
+    "name": "Nougat"
+  },
+  "febabd": {
+    "id": "72",
+    "name": "Light Salmon"
+  },
+  "4354a3": {
+    "id": "73",
+    "name": "Violet"
+  },
+  "6874ca": {
+    "id": "74",
+    "name": "Medium Bluish Violet"
+  },
+  "c7d23c": {
+    "id": "76",
+    "name": "Medium Lime"
+  },
+  "b3d7d1": {
+    "id": "231",
+    "name": "HO Aqua"
+  },
+  "f9ba61": {
+    "id": "80",
+    "name": "Light Orange"
+  },
+  "ae7a59": {
+    "id": "84",
+    "name": "Copper"
+  },
+  "9ca3a8": {
+    "id": "85",
+    "name": "Pearl Light Gray"
+  },
+  "7988a1": {
+    "id": "86",
+    "name": "Pearl Sand Blue"
+  },
+  "dcbc81": {
+    "id": "87",
+    "name": "Pearl Light Gold"
+  },
+  "cfe2f7": {
+    "id": "88",
+    "name": "Trans-Medium Blue"
+  },
+  "575857": {
+    "id": "89",
+    "name": "Pearl Dark Gray"
+  },
+  "abadac": {
+    "id": "90",
+    "name": "Pearl Very Light Gray"
+  },
+  "e6e3e0": {
+    "id": "91",
+    "name": "Very Light Bluish Gray"
+  },
+  "dfeea5": {
+    "id": "92",
+    "name": "Yellowish Green"
+  },
+  "b48455": {
+    "id": "93",
+    "name": "Flat Dark Gold"
+  },
+  "898788": {
+    "id": "94",
+    "name": "Flat Silver"
+  },
+  "f08f1c": {
+    "id": "179",
+    "name": "Glitter Trans-Orange"
+  },
+  "f2f3f2": {
+    "id": "96",
+    "name": "Pearl White"
+  },
+  "f8bb3d": {
+    "id": "97",
+    "name": "Bright Light Orange"
+  },
+  "9fc3e9": {
+    "id": "98",
+    "name": "Bright Light Blue"
+  },
+  "b31004": {
+    "id": "99",
+    "name": "Rust"
+  },
+  "fff03a": {
+    "id": "100",
+    "name": "Bright Light Yellow"
+  },
+  "7dbfdd": {
+    "id": "102",
+    "name": "Sky Blue"
+  },
+  "96709f": {
+    "id": "103",
+    "name": "Trans-Light Purple"
+  },
+  "0a3463": {
+    "id": "236",
+    "name": "HO Dark Blue"
+  },
+  "184632": {
+    "id": "238",
+    "name": "HO Dark Green"
+  },
+  "bdc6ad": {
+    "id": "106",
+    "name": "Glow In Dark Trans"
+  },
+  "aa7f2e": {
+    "id": "107",
+    "name": "Pearl Gold"
+  },
+  "352100": {
+    "id": "108",
+    "name": "Dark Brown"
+  },
+  "3592c3": {
+    "id": "109",
+    "name": "Maersk Blue"
+  },
+  "720e0f": {
+    "id": "110",
+    "name": "Dark Red"
+  },
+  "078bc9": {
+    "id": "111",
+    "name": "Dark Azure"
+  },
+  "36aebf": {
+    "id": "112",
+    "name": "Medium Azure"
+  },
+  "adc3c0": {
+    "id": "113",
+    "name": "Light Aqua"
+  },
+  "9b9a5a": {
+    "id": "256",
+    "name": "HO Olive Green"
+  },
+  "bba53d": {
+    "id": "115",
+    "name": "Chrome Gold"
+  },
+  "d67572": {
+    "id": "116",
+    "name": "Sand Red"
+  },
+  "f785b1": {
+    "id": "165",
+    "name": "Modulex Pink"
+  },
+  "fa9c1c": {
+    "id": "118",
+    "name": "Earth Orange"
+  },
+  "845e84": {
+    "id": "119",
+    "name": "Sand Purple"
+  },
+  "a0bcac": {
+    "id": "259",
+    "name": "HO Sand Green"
+  },
+  "6074a1": {
+    "id": "121",
+    "name": "Sand Blue"
+  },
+  "e0e0e0": {
+    "id": "122",
+    "name": "Chrome Silver"
+  },
+  "b67b50": {
+    "id": "123",
+    "name": "Fabuland Brown"
+  },
+  "ffa70b": {
+    "id": "124",
+    "name": "Medium Orange"
+  },
+  "a95500": {
+    "id": "125",
+    "name": "Dark Orange"
+  },
+  "e6e3da": {
+    "id": "126",
+    "name": "Very Light Gray"
+  },
+  "d9d9d9": {
+    "id": "127",
+    "name": "Glow in Dark White"
+  },
+  "9391e4": {
+    "id": "128",
+    "name": "Medium Violet"
+  },
+  "c0f500": {
+    "id": "129",
+    "name": "Glitter Trans-Neon Green"
+  },
+  "68bcc5": {
+    "id": "180",
+    "name": "Opal Trans-Light Blue"
+  },
+  "fcb76d": {
+    "id": "131",
+    "name": "Trans-Flame Yellowish Orange"
+  },
+  "fbe890": {
+    "id": "132",
+    "name": "Trans-Fire Yellow"
+  },
+  "b4d4f7": {
+    "id": "133",
+    "name": "Trans-Light Royal Blue"
+  },
+  "8e5597": {
+    "id": "134",
+    "name": "Reddish Lilac"
+  },
+  "039cbd": {
+    "id": "135",
+    "name": "Vintage Blue"
+  },
+  "1e601e": {
+    "id": "136",
+    "name": "Vintage Green"
+  },
+  "ca1f08": {
+    "id": "137",
+    "name": "Vintage Red"
+  },
+  "f3c305": {
+    "id": "138",
+    "name": "Vintage Yellow"
+  },
+  "ef9121": {
+    "id": "139",
+    "name": "Fabuland Orange"
+  },
+  "f4f4f4": {
+    "id": "140",
+    "name": "Modulex White"
+  },
+  "afb5c7": {
+    "id": "141",
+    "name": "Modulex Light Bluish Gray"
+  },
+  "9c9c9c": {
+    "id": "168",
+    "name": "Modulex Foil Light Gray"
+  },
+  "595d60": {
+    "id": "167",
+    "name": "Modulex Foil Dark Gray"
+  },
+  "6b5a5a": {
+    "id": "144",
+    "name": "Modulex Tile Gray"
+  },
+  "4d4c52": {
+    "id": "145",
+    "name": "Modulex Black"
+  },
+  "330000": {
+    "id": "146",
+    "name": "Modulex Tile Brown"
+  },
+  "5c5030": {
+    "id": "147",
+    "name": "Modulex Terracotta"
+  },
+  "907450": {
+    "id": "148",
+    "name": "Modulex Brown"
+  },
+  "dec69c": {
+    "id": "149",
+    "name": "Modulex Buff"
+  },
+  "b52c20": {
+    "id": "150",
+    "name": "Modulex Red"
+  },
+  "f45c40": {
+    "id": "151",
+    "name": "Modulex Pink Red"
+  },
+  "f47b30": {
+    "id": "152",
+    "name": "Modulex Orange"
+  },
+  "f7ad63": {
+    "id": "176",
+    "name": "Modulex Foil Orange"
+  },
+  "ffe371": {
+    "id": "154",
+    "name": "Modulex Light Yellow"
+  },
+  "fed557": {
+    "id": "175",
+    "name": "Modulex Foil Yellow"
+  },
+  "bdc618": {
+    "id": "156",
+    "name": "Modulex Lemon"
+  },
+  "7db538": {
+    "id": "170",
+    "name": "Modulex Foil Light Green"
+  },
+  "7c9051": {
+    "id": "158",
+    "name": "Modulex Olive Green"
+  },
+  "27867e": {
+    "id": "159",
+    "name": "Modulex Aqua Green"
+  },
+  "467083": {
+    "id": "160",
+    "name": "Modulex Teal Blue"
+  },
+  "0057a6": {
+    "id": "171",
+    "name": "Modulex Foil Dark Blue"
+  },
+  "61afff": {
+    "id": "162",
+    "name": "Modulex Medium Blue"
+  },
+  "68aece": {
+    "id": "172",
+    "name": "Modulex Foil Light Blue"
+  },
+  "bd7d85": {
+    "id": "164",
+    "name": "Modulex Violet"
+  },
+  "006400": {
+    "id": "169",
+    "name": "Modulex Foil Dark Green"
+  },
+  "4b0082": {
+    "id": "173",
+    "name": "Modulex Foil Violet"
+  },
+  "8b0000": {
+    "id": "174",
+    "name": "Modulex Foil Red"
+  },
+  "ff698f": {
+    "id": "177",
+    "name": "Coral"
+  },
+  "5ac4da": {
+    "id": "178",
+    "name": "Pastel Blue"
+  },
+  "ce1d9b": {
+    "id": "181",
+    "name": "Opal Trans-Dark Pink"
+  },
+  "c9e788": {
+    "id": "184",
+    "name": "Trans-Light Bright Green"
+  },
+  "94e5ab": {
+    "id": "185",
+    "name": "Trans-Light Green"
+  },
+  "8320b7": {
+    "id": "186",
+    "name": "Opal Trans-Purple"
+  },
+  "ebd800": {
+    "id": "189",
+    "name": "Vibrant Yellow"
+  },
+  "b46a00": {
+    "id": "190",
+    "name": "Pearl Copper"
+  },
+  "ff8014": {
+    "id": "191",
+    "name": "Fabuland Red"
+  },
+  "ac8247": {
+    "id": "192",
+    "name": "Reddish Gold"
+  },
+  "dd982e": {
+    "id": "193",
+    "name": "Curry"
+  },
+  "ad6140": {
+    "id": "194",
+    "name": "Dark Nougat"
+  },
+  "ee5434": {
+    "id": "195",
+    "name": "Bright Reddish Orange"
+  },
+  "d60026": {
+    "id": "196",
+    "name": "Pearl Red"
+  },
+  "0059a3": {
+    "id": "197",
+    "name": "Pearl Blue"
+  },
+  "008e3c": {
+    "id": "198",
+    "name": "Pearl Green"
+  },
+  "57392c": {
+    "id": "199",
+    "name": "Pearl Brown"
+  },
+  "0a1327": {
+    "id": "200",
+    "name": "Pearl Black"
+  },
+  "009ece": {
+    "id": "201",
+    "name": "Duplo Blue"
+  },
+  "3e95b6": {
+    "id": "202",
+    "name": "Duplo Medium Blue"
+  },
+  "fff230": {
+    "id": "203",
+    "name": "Duplo Lime"
+  },
+  "78fc78": {
+    "id": "204",
+    "name": "Fabuland Lime"
+  },
+  "468a5f": {
+    "id": "205",
+    "name": "Duplo Medium Green"
+  },
+  "60ba76": {
+    "id": "206",
+    "name": "Duplo Light Green"
+  },
+  "f3c988": {
+    "id": "207",
+    "name": "Light Tan"
+  },
+  "872b17": {
+    "id": "208",
+    "name": "Rust Orange"
+  },
+  "fe78b0": {
+    "id": "209",
+    "name": "Clikits Pink"
+  },
+  "945148": {
+    "id": "210",
+    "name": "Two-tone Copper"
+  },
+  "ab673a": {
+    "id": "211",
+    "name": "Two-tone Gold"
+  },
+  "737271": {
+    "id": "212",
+    "name": "Two-tone Silver"
+  },
+  "6a7944": {
+    "id": "213",
+    "name": "Pearl Lime"
+  },
+  "ff879c": {
+    "id": "214",
+    "name": "Duplo Pink"
+  },
+  "755945": {
+    "id": "215",
+    "name": "Medium Brown"
+  },
+  "cca373": {
+    "id": "216",
+    "name": "Warm Tan"
+  },
+  "3fb69e": {
+    "id": "217",
+    "name": "Duplo Turquoise"
+  },
+  "ffcb78": {
+    "id": "218",
+    "name": "Warm Yellowish Orange"
+  },
+  "764d3b": {
+    "id": "219",
+    "name": "Metallic Copper"
+  },
+  "9195ca": {
+    "id": "220",
+    "name": "Light Lilac"
+  },
+  "8d73b3": {
+    "id": "224",
+    "name": "Glitter Trans-Medium Purple"
+  },
+  "ffcf0b": {
+    "id": "227",
+    "name": "Clikits Yellow"
+  },
+  "5f27aa": {
+    "id": "228",
+    "name": "Duplo Dark Purple"
+  },
+  "ff0040": {
+    "id": "229",
+    "name": "Trans-Neon Red"
+  },
+  "3e3c39": {
+    "id": "230",
+    "name": "Pearl Titanium"
+  },
+  "1591cb": {
+    "id": "232",
+    "name": "HO Azure"
+  },
+  "354e5a": {
+    "id": "233",
+    "name": "HO Blue-gray"
+  },
+  "5b98b3": {
+    "id": "234",
+    "name": "HO Cyan"
+  },
+  "a7dccf": {
+    "id": "235",
+    "name": "HO Dark Aqua"
+  },
+  "b2b955": {
+    "id": "239",
+    "name": "HO Dark Lime"
+  },
+  "631314": {
+    "id": "240",
+    "name": "HO Dark Red"
+  },
+  "627a62": {
+    "id": "241",
+    "name": "HO Dark Sand Green"
+  },
+  "10929d": {
+    "id": "242",
+    "name": "HO Dark Turquoise"
+  },
+  "bb771b": {
+    "id": "243",
+    "name": "HO Earth Orange"
+  },
+  "b4a774": {
+    "id": "244",
+    "name": "HO Gold"
+  },
+  "a3d1c0": {
+    "id": "245",
+    "name": "HO Light Aqua"
+  },
+  "965336": {
+    "id": "246",
+    "name": "HO Light Brown"
+  },
+  "cdc298": {
+    "id": "247",
+    "name": "HO Light Gold"
+  },
+  "f9f1c7": {
+    "id": "248",
+    "name": "HO Light Tan"
+  },
+  "f5fab7": {
+    "id": "249",
+    "name": "HO Light Yellow"
+  },
+  "7396c8": {
+    "id": "250",
+    "name": "HO Medium Blue"
+  },
+  "c01111": {
+    "id": "251",
+    "name": "HO Medium Red"
+  },
+  "0d4763": {
+    "id": "252",
+    "name": "HO Metallic Blue"
+  },
+  "5e5e5e": {
+    "id": "253",
+    "name": "HO Metallic Dark Gray"
+  },
+  "879867": {
+    "id": "254",
+    "name": "HO Metallic Green"
+  },
+  "5f7d8c": {
+    "id": "255",
+    "name": "HO Metallic Sand Blue"
+  },
+  "d06262": {
+    "id": "257",
+    "name": "HO Rose"
+  },
+  "6e8aa6": {
+    "id": "258",
+    "name": "HO Sand Blue"
+  },
+  "616161": {
+    "id": "261",
+    "name": "HO Titanium"
+  },
+  "a5adb4": {
+    "id": "262",
+    "name": "Metal"
+  },
+  "ca4c0b": {
+    "id": "263",
+    "name": "Reddish Orange"
+  },
+  "915c3c": {
+    "id": "264",
+    "name": "Sienna Brown"
+  },
+  "5e3f33": {
+    "id": "265",
+    "name": "Umber Brown"
+  }
+}
