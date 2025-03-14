@@ -133,3 +133,7 @@ label {
 #download-btn:hover {
   background: var(--blue);
 }
+
+#instruction {
+  background-color: black;
+}
