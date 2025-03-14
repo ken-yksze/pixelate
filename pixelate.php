@@ -254,12 +254,11 @@ function generate_pixelate_instruction($source, $destination, $new_width)
             $text_color_id = imagecolorallocate($destination_image, 255, 255, 255); // White
         }
 
-        $text_color = imagecolorallocate($destination_image, 255, 255, 255);
-
         // Draw the circle
         imagefilledellipse($destination_image, $circle_center_x, $circle_center_y, $circle_diameter, $circle_diameter, $ellipse_color);
 
         // Define text properties
+        $text = $colours_to_info[$hex]->id;
         $font_size = $circle_diameter / 3;
         $font_file = 'Arial.ttf'; // Ensure this path is correct and the font file is accessible
 
@@ -275,9 +274,9 @@ function generate_pixelate_instruction($source, $destination, $new_width)
         $text_y = $circle_center_y + ($text_height / 2);
 
         // Render the text
-        imagettftext($destination_image, $font_size, 0, $text_x, $text_y, $text_color_id, $font_file, $colours_to_info[$hex]->id);
-        imagettftext($destination_image, $font_size, 0, $text_x + $circle_diameter, $text_y, $text_color, $font_file, $colours_to_info[$hex]->name);
-        imagettftext($destination_image, $font_size, 0, $text_x + 7.5 * $circle_diameter, $text_y, $text_color, $font_file, "#" . $hex);
+        imagettftext($destination_image, $font_size, 0, $text_x, $text_y, $text_color_id, $font_file, $text);
+        imagettftext($destination_image, $font_size, 0, $circle_center_x + $circle_diameter, $text_y, $text_color, $font_file, $colours_to_info[$hex]->name);
+        imagettftext($destination_image, $font_size, 0, $circle_center_x + 7.5 * $circle_diameter, $text_y, $text_color, $font_file, "#" . $hex);
     }
 
     // Save as PNG (supports transparency better)
