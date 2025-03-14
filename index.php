@@ -68,14 +68,18 @@ if (isset($_SESSION['displayed']) && $_SESSION['displayed'] === true) {
             echo '<br>';
             echo '<button onclick="window.location.href=\'download.php?file=' . $_SESSION['pixelated_file'] . '\'" id="download-btn">Download</button>';
             echo '<br>';
-            echo '<h2>LEGO instruction</h2>';
-            echo '<img src="' . $_SESSION['instruction_file'] . '" width="600" id="instruction">';
+            echo '<h2 style="margin-top:24px">LEGO instruction</h2>';
+            echo '<img src="' . $_SESSION['instruction_file'] . '" width="600">';
+            echo '<br>';
             echo '<button onclick="window.location.href=\'download.php?file=' . $_SESSION['instruction_file'] . '\'" id="download-btn">Download</button>';
             echo '<br>';
             $_SESSION['displayed'] = true;
         }
         ?>
     </main>
+    <footer id="footer">
+        <p>&copy; 2025 Pixelate - Convert Images to LEGO™ Instructions. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

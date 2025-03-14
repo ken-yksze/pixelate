@@ -134,6 +134,10 @@ label {
   background: var(--blue);
 }
 
-#instruction {
-  background-color: black;
+#footer {
+  background-color: var(--black) !important;
+  color: var(--white);
+  text-align: center;
+  padding: 30px 100px;
+  font-size: 16px;
 }

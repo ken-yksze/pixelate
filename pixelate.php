@@ -126,7 +126,7 @@ function image_pixelate($source, $destination, $new_width, $num_color)
 
 function generate_pixelate_instruction($source, $destination, $new_width)
 {
-    $circle_diameter = 3840 / $new_width;
+    $circle_diameter = 1920 / $new_width;
     $source_image = imagecreatefromstring(file_get_contents($source));
 
     // Get original dimensions
@@ -135,6 +135,8 @@ function generate_pixelate_instruction($source, $destination, $new_width)
 
     $temp_image = imagecreatetruecolor($new_width, $new_height);
     imagecopyresampled($temp_image, $source_image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
+
+    // Compute used colors
     $used_hex = [];
 
     for ($x = 0; $x < $new_width; $x++) {
@@ -157,17 +159,37 @@ function generate_pixelate_instruction($source, $destination, $new_width)
         }
     }
 
+    $font_size = $circle_diameter / 3;
+    $font_file = 'Arial.ttf'; // Ensure this path is correct and the font file is accessible
+    $colours_to_info = get_object_vars(json_decode(file_get_contents("colours_to_info.json")));
+    $max_bbox_width = 0;
+    $offset_1 = 0;
+    $offset_2 = 0;
+
+    // Compute width offset
+    foreach ($used_hex as $hex => $_) {
+        $bbox_1 = imagettfbbox($font_size, 0, $font_file, $colours_to_info[$hex]->name);
+        $bbox_2 = imagettfbbox($font_size, 0, $font_file, '#' . $hex);
+
+        $bbox_1_width = abs($bbox_1[4] - $bbox_1[0]);
+        $bbox_2_width = abs($bbox_2[4] - $bbox_2[0]);
+
+        if ($bbox_1_width + $bbox_2_width > $max_bbox_width) {
+            $max_bbox_width = $bbox_1_width + $bbox_2_width;
+            $offset_1 = $bbox_1_width;
+            $offset_2 = $bbox_2_width;
+        }
+    }
+
     // Create a blank true color image with new dimensions
-    $destination_image = imagecreatetruecolor($new_width * $circle_diameter / 3 + ($new_width + 1) * $circle_diameter, max((count($used_hex) + 1) * $circle_diameter, ($new_height + 1) * $circle_diameter));
+    $destination_image = imagecreatetruecolor($offset_1 + $offset_2 + ($new_width + 4) * $circle_diameter, max((count($used_hex) + 1) * $circle_diameter, ($new_height + 1) * $circle_diameter));
 
     // Preserve transparency (for PNGs)
     imagesavealpha($destination_image, true);
     $black = imagecolorallocatealpha($destination_image, 0, 0, 0, 0);
     imagefill($destination_image, 0, 0, $black);
 
-    $colours_to_info = get_object_vars(json_decode(file_get_contents("colours_to_info.json")));
-
-    // Second pass: Apply selected colors
+    // Draw pixelate circles with id
     for ($x = 0; $x < $new_width; $x++) {
         for ($y = 0; $y < $new_height; $y++) {
             $rgba = imagecolorat($temp_image, $x, $y);
@@ -184,10 +206,9 @@ function generate_pixelate_instruction($source, $destination, $new_width)
 
             // Compute hexadecimal representation
             $hex = sprintf('%02x%02x%02x', $r, $g, $b);
-            $used_hex[$hex] = true;
 
             // Determine circle center coordinates
-            $circle_center_x = $new_width * $circle_diameter / 3 + ($x + 1) * $circle_diameter;
+            $circle_center_x = $offset_1 + $offset_2 + +($x + 4) * $circle_diameter;
             $circle_center_y = ($y + 1) * $circle_diameter;
 
             // Allocate circle color
@@ -210,8 +231,6 @@ function generate_pixelate_instruction($source, $destination, $new_width)
 
             // Define text properties
             $text = $colours_to_info[$hex]->id;
-            $font_size = $circle_diameter / 3;
-            $font_file = 'Arial.ttf'; // Ensure this path is correct and the font file is accessible
 
             // Calculate text bounding box
             $bbox = imagettfbbox($font_size, 0, $font_file, $text);
@@ -231,6 +250,7 @@ function generate_pixelate_instruction($source, $destination, $new_width)
 
     $i = 0;
 
+    // Draw used colors
     foreach ($used_hex as $hex => $_) {
         list($r, $g, $b) = sscanf($hex, "%02x%02x%02x");
 
@@ -248,10 +268,10 @@ function generate_pixelate_instruction($source, $destination, $new_width)
         // Determine text color based on luminance
         if ($luminance > 128) {
             // Light background, use dark text
-            $text_color_id = imagecolorallocate($destination_image, 0, 0, 0); // Black
+            $text_color = imagecolorallocate($destination_image, 0, 0, 0); // Black
         } else {
             // Dark background, use light text
-            $text_color_id = imagecolorallocate($destination_image, 255, 255, 255); // White
+            $text_color = imagecolorallocate($destination_image, 255, 255, 255); // White
         }
 
         // Draw the circle
@@ -259,8 +279,6 @@ function generate_pixelate_instruction($source, $destination, $new_width)
 
         // Define text properties
         $text = $colours_to_info[$hex]->id;
-        $font_size = $circle_diameter / 3;
-        $font_file = 'Arial.ttf'; // Ensure this path is correct and the font file is accessible
 
         // Calculate text bounding box
         $bbox = imagettfbbox($font_size, 0, $font_file, $text);
@@ -274,9 +292,10 @@ function generate_pixelate_instruction($source, $destination, $new_width)
         $text_y = $circle_center_y + ($text_height / 2);
 
         // Render the text
-        imagettftext($destination_image, $font_size, 0, $text_x, $text_y, $text_color_id, $font_file, $text);
+        imagettftext($destination_image, $font_size, 0, $text_x, $text_y, $text_color, $font_file, $text);
+        $text_color = imagecolorallocate($destination_image, 255, 255, 255);
         imagettftext($destination_image, $font_size, 0, $circle_center_x + $circle_diameter, $text_y, $text_color, $font_file, $colours_to_info[$hex]->name);
-        imagettftext($destination_image, $font_size, 0, $circle_center_x + 7.5 * $circle_diameter, $text_y, $text_color, $font_file, "#" . $hex);
+        imagettftext($destination_image, $font_size, 0, $circle_center_x + $offset_1 + 2 * $circle_diameter, $text_y, $text_color, $font_file, "#" . $hex);
     }
 
     // Save as PNG (supports transparency better)
