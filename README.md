@@ -1,3 +1,3 @@
 # pixelate
 
-composer require tecnickcom/tcpdf
+composer install
