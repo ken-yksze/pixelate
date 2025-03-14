@@ -299,7 +299,17 @@ function generate_pixelate_instruction($source, $destination, $new_width)
     }
 
     // Save as PNG (supports transparency better)
-    imagepng($destination_image, $destination);
+    imagepng($destination_image, 'uploads/instruction.png');
+
+    // Convert into pdf and save
+    require_once __DIR__ . '/vendor/autoload.php';
+    $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+    $pdf->setPrintHeader(false);
+    $pdf->setPrintFooter(false);
+    $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
+    $pdf->AddPage();
+    $pdf->Image('uploads/instruction.png', 15, 15, 180, 0, 'PNG', '', '', false, 300, '', false, false, 0, false, false, false);
+    $pdf->Output(__DIR__ . '/' . $destination, 'F');
 
     // Clean up memory
     imagedestroy($source_image);
