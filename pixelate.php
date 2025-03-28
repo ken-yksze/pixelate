@@ -160,7 +160,7 @@ function generate_pixelate_instruction($source, $destination, $new_width)
     }
 
     $font_size = $circle_diameter / 3;
-    $font_file = 'Arial.ttf'; // Ensure this path is correct and the font file is accessible
+    $font_file = './Arial.ttf'; // Ensure this path is correct and the font file is accessible
     $colours_to_info = get_object_vars(json_decode(file_get_contents("colours_to_info.json")));
     $max_bbox_width = 0;
     $offset_1 = 0;
@@ -244,7 +244,7 @@ function generate_pixelate_instruction($source, $destination, $new_width)
             $text_y = $circle_center_y + ($text_height / 2);
 
             // Render the text
-            imagettftext($destination_image, $font_size, 0, $text_x, $text_y, $text_color, $font_file, $text);
+            imagettftext($destination_image, $font_size, 0, intval($text_x), intval($text_y), $text_color, $font_file, $text);
         }
     }
 
@@ -292,10 +292,10 @@ function generate_pixelate_instruction($source, $destination, $new_width)
         $text_y = $circle_center_y + ($text_height / 2);
 
         // Render the text
-        imagettftext($destination_image, $font_size, 0, $text_x, $text_y, $text_color, $font_file, $text);
+        imagettftext($destination_image, $font_size, 0, intval($text_x), intval($text_y), $text_color, $font_file, $text);
         $text_color = imagecolorallocate($destination_image, 255, 255, 255);
-        imagettftext($destination_image, $font_size, 0, $circle_center_x + $circle_diameter, $text_y, $text_color, $font_file, $colours_to_info[$hex]->name);
-        imagettftext($destination_image, $font_size, 0, $circle_center_x + $offset_1 + 2 * $circle_diameter, $text_y, $text_color, $font_file, "#" . $hex);
+        imagettftext($destination_image, $font_size, 0, intval($circle_center_x + $circle_diameter), intval($text_y), $text_color, $font_file, $colours_to_info[$hex]->name);
+        imagettftext($destination_image, $font_size, 0, intval($circle_center_x + $offset_1 + 2 * $circle_diameter), intval($text_y), $text_color, $font_file, "#" . $hex);
     }
 
     // Save as PNG (supports transparency better)
